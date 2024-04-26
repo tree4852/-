@@ -1,0 +1,8 @@
+#swiperReview .swiper-slide{
+    height: 600px;
+}
+
+#tabSection {
+    display: flex;
+}
+.d-flex{display: flex;}

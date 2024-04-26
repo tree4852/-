@@ -48,7 +48,54 @@
 </head>
 <body>
     <!-- 공통컨텐츠 : header, footer, aside -->
-  
+
+    <!-- .container.d-flex>.col-6.bg-light>h2{공지사항}+ul>li*5>a{공지사항 제목들 나옵니다} -->
+
+    <div class="container d-flex " id="tabSection">
+        <div class="col-6 bg-light noticelist d-flex flex-column justify-content-center align-items-center " >
+            <h2>공지사항</h2>
+            <ul>
+                <li><a href="">공지사항 제목들 나옵니다</a></li>
+                <li><a href="">공지사항 제목들 나옵니다</a></li>
+                <li><a href="">공지사항 제목들 나옵니다</a></li>
+                <li><a href="">공지사항 제목들 나옵니다</a></li>
+                <li><a href="">공지사항 제목들 나옵니다</a></li>
+            </ul>
+        </div>
+        <div class="col-6 border " id="swiperReview">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper d-flex">
+                 
+                  <div class="swiper-slide bg-warning text-white d-flex justify-content-center align-items-center">첫번째 배너</div>
+                  <div class="swiper-slide bg-warning text-white d-flex justify-content-center align-items-center">두번째 배너</div>
+                  <div class="swiper-slide bg-dark text-white d-flex justify-content-center align-items-center">세번째 배너</div>
+              
+                </div>
+               
+                <div class="swiper-pagination"></div>
+            
+          </div>
+
+        </div>
+    </div>
+  <script>
+    const swiper = new Swiper(' #swiperReview .swiper', {
+                        loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                  });
+
+
+  </script>
 </body>
 </html>
+
+
 
