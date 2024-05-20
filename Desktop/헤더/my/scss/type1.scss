@@ -1,0 +1,98 @@
+$display-flex: flex !important;
+$justify-center: center !important;
+$align-center: center !important;
+$align-end: end !important;
+$justify-content: space-between !important;
+
+
+// Mixin for flex-center properties
+@mixin flex-center {
+  display: $display-flex;
+  justify-content: $justify-center;
+  align-items: $align-center;
+}
+
+// @mixin flex-center_bet {
+//     display: $display-flex;
+//     justify-content: $justify-space-between;
+//     align-items: $align-center;
+//   }
+
+.rel {
+  position: relative !important;
+}
+
+.abs {
+  position: absolute !important;
+}
+
+.d-flex {
+  display: $display-flex;
+}
+
+.jcc {
+  justify-content: $justify-center;
+}
+
+.aic {
+  align-items: $align-center;
+}
+
+.aie {
+  align-items: $align-end;
+}
+
+.flexcenter {
+  @include flex-center;
+}
+.jcb{
+    justify-content: space-between;
+}
+// .flex_bet {
+//     @include flex-center_bets;
+// }
+
+
+
+#hd{
+    .gnb{
+        &:hover{
+            &:before{
+                height: 180px;
+
+            }
+            .gnb_li{
+
+                .gnb_a{
+                }
+                .gnb_ul{
+                    .gnb_ul_li{
+    
+                    }
+                }
+            }
+
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            right: 0;
+            height: 0;
+            background-color: rgba(0,0,0,.5);
+            transition: 0.5s;
+
+
+        }
+        .gnb_li{
+            .gnb_a{
+            }
+            .gnb_ul{
+                .gnb_ul_li{
+
+                }
+            }
+        }
+    }
+}
